@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    
+    <LinearLayout
+        android:id="@+id/top_menu"
+        style="@style/top_menu">
+
+        <ImageButton
+            style="@style/top_menu_icon"
+            android:src="@drawable/ic_back"
+            android:contentDescription="@string/back_icon_text"/>
+
+        <TextView
+            style="@style/page_heading"/>
+
+        <ImageButton
+            style="@style/top_menu_icon"
+            android:src="@drawable/ic_search"
+            android:contentDescription="@string/search_icon_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/card_box">
+
+        <LinearLayout
+            android:id="@+id/feedback_card1"
+            style="@style/card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/avatar1"
+                        style="@style/card_avatar"
+                        android:src="@drawable/ic_avatar1"
+                        android:contentDescription="@string/name1"/>
+
+                    <TextView
+                        android:id="@+id/name1"
+                        style="@style/card_name"
+                        android:text="@string/name1"
+                        android:layout_toEndOf="@+id/avatar1"/>
+
+                    <TextView
+                        style="@style/card_date"
+                        android:text="@string/date1"
+                        android:layout_toEndOf="@+id/avatar1"
+                        android:layout_below="@+id/name1"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/card_text"
+                    android:text="@string/text1" />
+
+                <LinearLayout
+                    android:id="@+id/replays_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/replays_count"
+                        style="@style/card_replays"
+                        android:text="@string/replays_count" />
+
+                   <ImageButton
+                        style="@style/card_icon"
+                        android:src="@drawable/ic_like"
+                        android:contentDescription="@string/like_icon_text"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_card2"
+            style="@style/card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/avatar2"
+                        style="@style/card_avatar"
+                        android:src="@drawable/ic_avatar2"
+                        android:contentDescription="@string/name1"/>
+
+                    <TextView
+                        android:id="@+id/name2"
+                        style="@style/card_name"
+                        android:text="@string/name2"
+                        android:layout_toEndOf="@+id/avatar2"/>
+
+                    <TextView
+                        style="@style/card_date"
+                        android:text="@string/date2"
+                        android:layout_toEndOf="@+id/avatar2"
+                        android:layout_below="@+id/name2"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/card_text"
+                    android:text="@string/text2"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/replays_container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/replays_count2"
+                        style="@style/card_replays"
+                        android:text="@string/replays_count" />
+
+                    <ImageView
+                        style="@style/card_icon"
+                        android:src="@drawable/ic_like"
+                        android:contentDescription="@string/like_icon_text"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_card3"
+            style="@style/card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/avatar3"
+                        style="@style/card_avatar"
+                        android:src="@drawable/ic_avatar3"
+                        android:contentDescription="@string/name3"/>
+
+                    <TextView
+                        android:id="@+id/name3"
+                        style="@style/card_name"
+                        android:text="@string/name3"
+                        android:layout_toEndOf="@+id/avatar3"/>
+
+                    <TextView
+                        style="@style/card_date"
+                        android:text="@string/date1"
+                        android:layout_toEndOf="@+id/avatar3"
+                        android:layout_below="@+id/name3"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/card_text"
+                    android:text="@string/text2" />
+
+                <LinearLayout
+                    android:id="@+id/replays_container3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/replays_count3"
+                        style="@style/card_replays"
+                        android:text="@string/replays_count" />
+
+                    <ImageView
+                        style="@style/card_icon"
+                        android:src="@drawable/ic_like"
+                        android:contentDescription="@string/like_icon_text"/>
+                </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/bottom_menu">
+
+        <ImageButton
+            style="@style/bottom_menu_icon"
+            android:src="@drawable/ic_shopping"
+            android:contentDescription="@string/menu_icon1_text"
+
+            />
+
+        <ImageButton
+            style="@style/bottom_menu_icon"
+            android:src="@drawable/ic_book_open_variant"
+            android:contentDescription="@string/menu_icon2_text"/>
+
+        <ImageButton
+            style="@style/bottom_menu_icon"
+            android:src="@drawable/ic_cart"
+            android:contentDescription="@string/menu_icon3_text"/>
+
+        <ImageButton
+            style="@style/bottom_menu_icon"
+            android:src="@drawable/ic_tag_heart"
+            android:contentDescription="@string/menu_icon4_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                style="@style/bottom_menu_icon"
+                android:contentDescription="@string/menu_icon5_text"
+                android:src="@drawable/ic_heart_filled" />
+
+            <TextView
+                style="@style/bottom_menu_icon_text"
+                android:text="@string/menu_icon5_text"
+/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
